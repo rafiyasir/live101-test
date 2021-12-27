@@ -59,13 +59,14 @@ const Home = () => {
         ...prevState,
         ...newBody,
       }));
+      console.log("mainObj", body);
       setPage(1);
       fetchPerformers(page, newBody);
     }
   };
   useEffect(() => {
     fetchPerformers(page, body);
-  }, [page]);
+  }, [page, body]);
   return (
     <>
       <Filter handleBody={handleBody} />
