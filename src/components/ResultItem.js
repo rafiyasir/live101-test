@@ -17,14 +17,12 @@ const ResultItem = ({ performer }) => {
   //   console.log(first_name, profile_image_url, price_one_hour);
   return (
     <Card className="my-3 p-3 rounded">
-      <Card.Img
-        as={Image}
+      <Image
         src={profile_image_url}
-        variant="top"
-        fluid={true}
-        roundedCircle={true}
+        roundedCircle
+        fluid
+        className="artist-img"
       />
-      {/* <Image scr={profile_image_url} /> */}
 
       <Card.Body>
         <Card.Title as="h2">{first_name}</Card.Title>

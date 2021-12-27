@@ -12,6 +12,12 @@
   border-color: #c26d6d;
 }
 
+.artist-img {
+  width: 100%;
+  height: 40vh;
+  /* object-fit: cover; */
+}
+
 .fab-wrapper {
   position: fixed;
   bottom: 3rem;
