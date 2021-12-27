@@ -9,7 +9,7 @@ const Paginate = ({ pages, page, fetchPerformers, changePage }) => {
   };
   return (
     pages > 1 && (
-      <Pagination>
+      <Pagination className="justify-content-center">
         {[...Array(pages).keys()].map((x) => (
           <Pagination.Item
             active={x + 1 === page}

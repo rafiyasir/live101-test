@@ -51,9 +51,8 @@ const Home = () => {
         //   ...prevState,
         //   key: tempBody[key],
         // }));
-        if (key === "artist_category") newBody[key] = [tempBody[key]];
-        else if (key === "event_category") newBody[key] = [tempBody[key]];
-        else newBody[key] = tempBody[key];
+        newBody[key] = [tempBody[key]];
+        newBody[key] = [tempBody[key]];
       }
       setBody((prevState) => ({
         ...prevState,

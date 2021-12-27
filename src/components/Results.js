@@ -4,13 +4,13 @@ import Paginate from "./Pagination";
 import ResultItem from "./ResultItem";
 
 const Results = ({ performers, pages, page, fetchPerformers, changePage }) => {
-  //   console.log("results", performers);
+  console.log("results", performers);
   console.log("pages", pages);
   console.log("page", page);
   return (
     <>
       {/* <ResultItem performers={performers} /> */}
-      {performers && (
+      {performers ? (
         <>
           <Row>
             {performers.result.map((performer) => (
@@ -26,6 +26,8 @@ const Results = ({ performers, pages, page, fetchPerformers, changePage }) => {
             changePage={changePage}
           />
         </>
+      ) : (
+        <h1 className="align-text-center">Noting To Show</h1>
       )}
     </>
   );

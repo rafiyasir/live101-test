@@ -10,6 +10,9 @@ const ResultItem = ({ performer }) => {
     hourly_price: { price_one_hour },
     rating_average,
     review_count,
+    genre_category_values,
+    artist_category_value,
+    travel_city_value,
   } = performer;
   //   console.log(first_name, profile_image_url, price_one_hour);
   return (
@@ -24,7 +27,12 @@ const ResultItem = ({ performer }) => {
       {/* <Image scr={profile_image_url} /> */}
 
       <Card.Body>
-        <Card.Title as="h4">{first_name}</Card.Title>
+        <Card.Title as="h2">{first_name}</Card.Title>
+
+        <Card.Text as="h3">
+          {travel_city_value[0]} | {artist_category_value[0]} |{" "}
+          {genre_category_values[0]}
+        </Card.Text>
 
         <Card.Text as="div">
           {intro.length > 150 ? intro.slice(0, 150).concat() : intro}
