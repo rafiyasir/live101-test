@@ -6,7 +6,8 @@
   border-color: #c26d6d;
 }
 
-.btn-primary:hover {
+.btn-primary:hover,
+.btn-primary:focus {
   background-color: #db6672;
   border-color: #c26d6d;
 }

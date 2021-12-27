@@ -1,5 +1,5 @@
 import React from "react";
-import { Card, Image } from "react-bootstrap";
+import { Card, Image, Button } from "react-bootstrap";
 import Rating from "./Rating";
 
 const ResultItem = ({ performer }) => {
@@ -46,6 +46,8 @@ const ResultItem = ({ performer }) => {
           From: <span>&#8377;</span>
           {price_one_hour}
         </Card.Text>
+
+        <Button className="rounded-pill">Check Availability</Button>
       </Card.Body>
     </Card>
   );

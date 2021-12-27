@@ -12,6 +12,7 @@ const Paginate = ({ pages, page, fetchPerformers, changePage }) => {
       <Pagination className="justify-content-center">
         {[...Array(pages).keys()].map((x) => (
           <Pagination.Item
+            key={x + 1}
             active={x + 1 === page}
             onClick={(e) => handleClick({ e, x })}
           >
