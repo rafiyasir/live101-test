@@ -27,20 +27,20 @@ const ResultItem = ({ performer }) => {
       <Card.Body>
         <Card.Title as="h2">{first_name}</Card.Title>
 
-        <Card.Text as="h3">
+        <Card.Text as="h5">
           {travel_city_value[0]} | {artist_category_value[0]} |{" "}
           {genre_category_values[0]}
         </Card.Text>
 
         <Card.Text as="div">
-          {intro.length > 150 ? intro.slice(0, 150).concat() : intro}
+          {intro.length > 150 ? intro.slice(0, 150).concat("...") : intro}
         </Card.Text>
 
         <Card.Text as="div">
           <Rating value={rating_average} text={`${review_count} reviews`} />
         </Card.Text>
 
-        <Card.Text as="h3">
+        <Card.Text as="h4">
           From: <span>&#8377;</span>
           {price_one_hour}
         </Card.Text>

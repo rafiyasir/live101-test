@@ -6,6 +6,10 @@
   border-color: #c26d6d;
 }
 
+.visually-hidden {
+  display: none;
+}
+
 .btn-primary:hover,
 .btn-primary:focus {
   background-color: #db6672;

@@ -13,7 +13,7 @@ used functional components with hooks.
 
 In the project directory, you can run:
 
-### `npm start`
+### `npm install`
 
 Install all dependencies
 
